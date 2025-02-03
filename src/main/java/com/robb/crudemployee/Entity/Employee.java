@@ -20,6 +20,7 @@ public class Employee {
     @Column(name="email")
     private String email;
 
+
     public Employee() {}
 
     public Employee(String firstName, String lastName, String email) {
@@ -27,6 +28,7 @@ public class Employee {
         this.lastName = lastName;
         this.email = email;
     }
+
 
     public String getFirstName() {
         return firstName;
@@ -55,6 +57,11 @@ public class Employee {
     public int getId() {
         return id;
     }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
 
     @Override
     public String toString() {
